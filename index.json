@@ -1,0 +1,16 @@
+[
+  {
+    "id": "edixor-1.0.0",
+    "title": "# Edixor 1.2.0 — Новый UI и поддержка плагинов",
+    "date": "2025-06-20",
+    "path": "News/edixor-1.0.0",
+    "preview": "News/standard.png"
+  },
+  {
+    "id": "test-news1",
+    "title": "# Edixor 1.2.0 — Новый UI и поддержка плагинов",
+    "date": "2025-06-20",
+    "path": "News/test-news1",
+    "preview": "News/standard.png"
+  }
+]
