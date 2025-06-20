@@ -5,6 +5,7 @@ on:
     paths:
       - 'News/**'
       - '.github/workflows/update-news.yml'
+      workflow_dispatch:
 
 jobs:
   update-index:
