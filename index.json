@@ -1,0 +1,25 @@
+  "test-news1": {
+    "title": "Заголовок H1 — Edixor Markdown Showcase",
+    "date": "2025-06-23",
+    "path": "https://raw.githubusercontent.com/Terafy/edixor-news/main/News/test-news1/news.md",
+    "preview": "https://raw.githubusercontent.com/Terafy/edixor-news/main/resources/standard.png"
+  },
+  "test-news1 copy": {
+    "title": "News test2",
+    "date": "2025-06-23",
+    "path": "https://raw.githubusercontent.com/Terafy/edixor-news/main/News/test-news1 copy/news.md",
+    "preview": "https://raw.githubusercontent.com/Terafy/edixor-news/main/resources/standard.png"
+  },
+  "test-news1 copy 2": {
+    "title": "Zip zip",
+    "date": "2025-06-23",
+    "path": "https://raw.githubusercontent.com/Terafy/edixor-news/main/News/test-news1 copy 2/news.md",
+    "preview": "https://raw.githubusercontent.com/Terafy/edixor-news/main/News/test-news1 copy 2/cover.png"
+  },
+  "test-news1 copy 3": {
+    "title": "Test2",
+    "date": "2025-06-23",
+    "path": "https://raw.githubusercontent.com/Terafy/edixor-news/main/News/test-news1 copy 3/news.md",
+    "preview": "https://raw.githubusercontent.com/Terafy/edixor-news/main/News/test-news1 copy 3/cover.png"
+  }
+}
