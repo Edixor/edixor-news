@@ -5,7 +5,7 @@ on:
     paths:
       - 'News/**'
       - '.github/workflows/update-news.yml'
-      workflow_dispatch:
+  workflow_dispatch:
 
 jobs:
   update-index:
@@ -18,10 +18,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Setup Python
+      - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: 3.11
 
       - name: Run Python generator
         run: python .github/scripts/generate_index.py
