@@ -1,7 +1,7 @@
 import json
 import os
-from datetime import datetime
 import sys
+from datetime import datetime
 
 news_dir = "News"
 index_file = "index.json"
@@ -38,12 +38,18 @@ for folder in sorted(os.listdir(news_dir)):
     title = lines[0].strip() if lines else folder
     date = datetime.fromtimestamp(os.path.getmtime(md_path)).strftime("%Y-%m-%d")
 
+    if os.path.isfile(preview_path):
+        preview = f"{news_dir}/{folder}/preview.png"
+    else:
+        preview = default_preview
+        warnings.append(f"{folder}: preview.png not found, using standard.png")
+
     entry = {
         "id": folder,
         "title": title,
         "date": date,
         "path": f"{news_dir}/{folder}",
-        "preview": f"{news_dir}/{folder}/preview.png" if os.path.isfile(preview_path) else default_preview
+        "preview": preview
     }
 
     news_entries.append(entry)
