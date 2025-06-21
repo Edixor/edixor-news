@@ -37,7 +37,8 @@ for folder in sorted(os.listdir(news_dir)):
 
     title = lines[0].strip() if lines else folder
     date = datetime.fromtimestamp(os.path.getmtime(md_path)).strftime("%Y-%m-%d")
-    preview = f"{news_dir}/{folder}/preview.png" if os.path.isfile(preview_path) else default_preview
+    base_url = "https://raw.githubusercontent.com/Terafy/edixor-news/main"
+    preview = f"{base_url}/{news_dir}/{folder}/preview.png" if os.path.isfile(preview_path) else f"{base_url}/{default_preview}"
 
     if not os.path.isfile(preview_path):
         warnings.append(f"{folder}: preview.png not found, using standard.png")
