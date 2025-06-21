@@ -15,9 +15,12 @@ if not os.path.isdir(news_dir):
     print(f"❌ '{news_dir}' directory not found.")
     sys.exit(1)
 
+base_url = "https://raw.githubusercontent.com/Terafy/edixor-news/main"
+
 for folder in sorted(os.listdir(news_dir)):
     subdir = os.path.join(news_dir, folder)
     md_path = os.path.join(subdir, "news.md")
+    cover_path = os.path.join(subdir, "cover.png")
     preview_path = os.path.join(subdir, "preview.png")
 
     if not os.path.isdir(subdir):
@@ -37,11 +40,15 @@ for folder in sorted(os.listdir(news_dir)):
 
     title = lines[0].strip() if lines else folder
     date = datetime.fromtimestamp(os.path.getmtime(md_path)).strftime("%Y-%m-%d")
-    base_url = "https://raw.githubusercontent.com/Terafy/edixor-news/main"
-    preview = f"{base_url}/{news_dir}/{folder}/preview.png" if os.path.isfile(preview_path) else f"{base_url}/{default_preview}"
 
-    if not os.path.isfile(preview_path):
-        warnings.append(f"{folder}: preview.png not found, using standard.png")
+    if os.path.isfile(cover_path):
+        preview = f"{base_url}/{news_dir}/{folder}/cover.png"
+    elif os.path.isfile(preview_path):
+        preview = f"{base_url}/{news_dir}/{folder}/preview.png"
+        warnings.append(f"{folder}: using fallback preview.png")
+    else:
+        preview = f"{base_url}/{default_preview}"
+        warnings.append(f"{folder}: no cover/preview found, using standard.png")
 
     news_dict[folder] = {
         "title": title,
