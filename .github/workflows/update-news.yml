@@ -2,10 +2,13 @@ name: Update News Index
 
 on:
   push:
+    branches:
+      - main
     paths:
       - 'News/**'
       - '.github/workflows/update-news.yml'
   workflow_dispatch:
+
 
 jobs:
   update-index:
