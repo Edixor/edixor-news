@@ -7,7 +7,7 @@ news_dir = "News"
 index_file = "index.json"
 default_preview = "News/standard.png"
 
-news_entries = []
+news_dict = {}
 warnings = []
 errors = []
 
@@ -37,22 +37,17 @@ for folder in sorted(os.listdir(news_dir)):
 
     title = lines[0].strip() if lines else folder
     date = datetime.fromtimestamp(os.path.getmtime(md_path)).strftime("%Y-%m-%d")
+    preview = f"{news_dir}/{folder}/preview.png" if os.path.isfile(preview_path) else default_preview
 
-    if os.path.isfile(preview_path):
-        preview = f"{news_dir}/{folder}/preview.png"
-    else:
-        preview = default_preview
+    if not os.path.isfile(preview_path):
         warnings.append(f"{folder}: preview.png not found, using standard.png")
 
-    entry = {
-        "id": folder,
+    news_dict[folder] = {
         "title": title,
         "date": date,
         "path": f"{news_dir}/{folder}",
         "preview": preview
     }
-
-    news_entries.append(entry)
 
 if warnings:
     print("⚠️ Warnings:")
@@ -66,7 +61,7 @@ if errors:
     sys.exit(1)
 
 with open(index_file, "w", encoding="utf-8") as f:
-    json.dump(news_entries, f, indent=2, ensure_ascii=False)
+    json.dump(news_dict, f, indent=2, ensure_ascii=False)
 
-print(f"✅ New news entries: {', '.join(entry['id'] for entry in news_entries)}")
-print(f"📦 {index_file} updated, {len(news_entries)} entries.")
+print(f"✅ New news entries: {', '.join(news_dict.keys())}")
+print(f"📦 {index_file} updated, {len(news_dict)} entries.")
