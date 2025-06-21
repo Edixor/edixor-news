@@ -3,24 +3,24 @@
     "title": "# Edixor 1.2.0 — Новый UI и поддержка плагинов",
     "date": "2025-06-21",
     "path": "News/edixor-1.0.0",
-    "preview": "resources/standard.png"
+    "preview": "https://raw.githubusercontent.com/Terafy/edixor-news/main/resources/standard.png"
   },
   "test-news1": {
     "title": "# Test",
     "date": "2025-06-21",
     "path": "News/test-news1",
-    "preview": "resources/standard.png"
+    "preview": "https://raw.githubusercontent.com/Terafy/edixor-news/main/resources/standard.png"
   },
   "test-news1 copy": {
     "title": "# Test1",
     "date": "2025-06-21",
     "path": "News/test-news1 copy",
-    "preview": "resources/standard.png"
+    "preview": "https://raw.githubusercontent.com/Terafy/edixor-news/main/resources/standard.png"
   },
   "test-news1 copy 2": {
     "title": "# Test2",
     "date": "2025-06-21",
     "path": "News/test-news1 copy 2",
-    "preview": "resources/standard.png"
+    "preview": "https://raw.githubusercontent.com/Terafy/edixor-news/main/resources/standard.png"
   }
 }
