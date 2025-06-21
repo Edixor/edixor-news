@@ -5,7 +5,7 @@ from datetime import datetime
 
 news_dir = "News"
 index_file = "index.json"
-default_preview = "News/standard.png"
+default_preview = "resources/standard.png" 
 
 news_dict = {}
 warnings = []
