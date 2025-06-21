@@ -5,7 +5,7 @@ from datetime import datetime
 
 news_dir = "News"
 index_file = "index.json"
-default_preview = "resources/standard.png" 
+default_preview = "resources/standard.png"
 
 news_dict = {}
 warnings = []
@@ -38,7 +38,10 @@ for folder in sorted(os.listdir(news_dir)):
         errors.append(f"{folder}: news.md is empty")
         continue
 
-    title = lines[0].strip() if lines else folder
+    # Убираем ведущий # и пробел в заголовке, если есть
+    raw_title = lines[0].strip() if lines else folder
+    title = raw_title[1:].strip() if raw_title.startswith("#") else raw_title
+
     date = datetime.fromtimestamp(os.path.getmtime(md_path)).strftime("%Y-%m-%d")
 
     if os.path.isfile(cover_path):
@@ -50,10 +53,12 @@ for folder in sorted(os.listdir(news_dir)):
         preview = f"{base_url}/{default_preview}"
         warnings.append(f"{folder}: no cover/preview found, using standard.png")
 
+    md_url = f"{base_url}/{news_dir}/{folder}/news.md"
+
     news_dict[folder] = {
         "title": title,
         "date": date,
-        "path": f"{news_dir}/{folder}",
+        "path": md_url,
         "preview": preview
     }
 
