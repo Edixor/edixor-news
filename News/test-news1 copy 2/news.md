@@ -1,11 +1,3 @@
-# Test2
+# Zip zip
 
-![Обложка](News\test-news1\cover.png)
-
-Мы переработали интерфейс под UI Toolkit и добавили поддержку плагинов.
-
-**Основные изменения:**
-
-- Новый UI
-- Поддержка расширений
-- Улучшения производительности
+**ZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZipZip** 
