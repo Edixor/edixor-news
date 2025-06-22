@@ -1,26 +1,26 @@
 {
-  "edixor-1.0.0": {
-    "title": "Edixor 1.2.0 — Новый UI и поддержка плагинов",
-    "date": "2025-06-21",
-    "path": "https://raw.githubusercontent.com/Terafy/edixor-news/main/News/edixor-1.0.0/news.md",
-    "preview": "https://raw.githubusercontent.com/Terafy/edixor-news/main/News/edixor-1.0.0/cover.png"
-  },
   "test-news1": {
-    "title": "Test",
-    "date": "2025-06-21",
+    "title": "News test1",
+    "date": "2025-06-22",
     "path": "https://raw.githubusercontent.com/Terafy/edixor-news/main/News/test-news1/news.md",
-    "preview": "https://raw.githubusercontent.com/Terafy/edixor-news/main/News/test-news1/cover.png"
+    "preview": "https://raw.githubusercontent.com/Terafy/edixor-news/main/resources/standard.png"
   },
   "test-news1 copy": {
     "title": "Test1",
-    "date": "2025-06-21",
+    "date": "2025-06-22",
     "path": "https://raw.githubusercontent.com/Terafy/edixor-news/main/News/test-news1 copy/news.md",
-    "preview": "https://raw.githubusercontent.com/Terafy/edixor-news/main/News/test-news1 copy/cover.png"
+    "preview": "https://raw.githubusercontent.com/Terafy/edixor-news/main/resources/standard.png"
   },
   "test-news1 copy 2": {
     "title": "Test2",
-    "date": "2025-06-21",
+    "date": "2025-06-22",
     "path": "https://raw.githubusercontent.com/Terafy/edixor-news/main/News/test-news1 copy 2/news.md",
     "preview": "https://raw.githubusercontent.com/Terafy/edixor-news/main/News/test-news1 copy 2/cover.png"
+  },
+  "test-news1 copy 3": {
+    "title": "Test2",
+    "date": "2025-06-22",
+    "path": "https://raw.githubusercontent.com/Terafy/edixor-news/main/News/test-news1 copy 3/news.md",
+    "preview": "https://raw.githubusercontent.com/Terafy/edixor-news/main/News/test-news1 copy 3/cover.png"
   }
 }
