@@ -38,7 +38,6 @@ for folder in sorted(os.listdir(news_dir)):
         errors.append(f"{folder}: news.md is empty")
         continue
 
-    # Убираем ведущий # и пробел в заголовке, если есть
     raw_title = lines[0].strip() if lines else folder
     title = raw_title[1:].strip() if raw_title.startswith("#") else raw_title
 
