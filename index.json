@@ -1,8 +1,11 @@
 {
-  "Pre-release": {
-    "title": "Пре-релиз Edixor 0.9.2",
-    "date": "2025-07-06",
-    "path": "https://raw.githubusercontent.com/Terafy/edixor-news/main/News/Pre-release/news.md",
-    "preview": "https://raw.githubusercontent.com/Terafy/edixor-news/main/resources/standard.png"
+  "version": "2025-07-15T10:10:04Z",
+  "entries": {
+    "Pre-release": {
+      "title": "Пре-релиз Edixor 0.9.2",
+      "date": "2025-07-15",
+      "path": "https://raw.githubusercontent.com/Terafy/edixor-news/main/News/Pre-release/news.md",
+      "preview": "https://raw.githubusercontent.com/Terafy/edixor-news/main/resources/standard.png"
+    }
   }
 }
