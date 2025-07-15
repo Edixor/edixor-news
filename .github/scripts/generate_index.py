@@ -72,8 +72,15 @@ if errors:
         print("  -", e)
     sys.exit(1)
 
+version = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
+
+full_output = {
+    "version": version,
+    "entries": news_dict
+}
+
 with open(index_file, "w", encoding="utf-8") as f:
-    json.dump(news_dict, f, indent=2, ensure_ascii=False)
+    json.dump(full_output, f, indent=2, ensure_ascii=False)
 
 print(f"✅ New news entries: {', '.join(news_dict.keys())}")
-print(f"📦 {index_file} updated, {len(news_dict)} entries.")
+print(f"📦 {index_file} updated, {len(news_dict)} entries. Version: {version}")
